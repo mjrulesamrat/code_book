@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body>
+
+<div ng-app="" >
+
+<h1> Product 1</h1>
+Quantity: <input type="number" ng-model="quantity">
+<br/>Price: <input type="number" ng-model="price">  <t/>Total :{{ (quantity * price) | currency }}
+<hr/>
+
+<h1> Product 2</h1>
+Quantity: <input type="number" ng-model="quantity1">
+<br/>Price: <input type="number" ng-model="price1"> <t/>Total :{{ (quantity1 * price1) | currency }}
+<hr/>
+
+<p>Full Total = {{ (quantity * price) + (quantity1 * price1) | currency }}</p>
+
+</div>
+
+
+</body>
+</html>
+
